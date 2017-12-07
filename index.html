@@ -23,8 +23,21 @@
 	</header>
 	<!-- fim do menu superior -->
 
-	<main></main>
-	<!-- fim do conteudo -->
+	<main>
+		<article>
+			<header>
+				<h1>Bem-vindo(a) ao curso gratuito de html5</h1>
+				<p class="tagline">Você esta pronto para aprender HTML5, CSS, JQUERY de forma descomplicada, gratuita e do jeito certo? Confira o nosso curso gratuito de HTML5!</p>
+				<div>
+					<div class="fb-like" data-href="https://www.facebook.com/upinside" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+					<div class="fb-share-button" data-href="http://www.upinside.com.br/oferta/html5-do-jeito-certo/" data-layout="button_count"></div>
+				</div>
+				<div>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/TYXE-legZMU" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+				</div>
+			</header>
+		</article><!-- destaque do site -->
+	</main><!-- fim do conteudo -->
 
 	<footer>
 		<h1>Curso de HTML5</h1>
@@ -39,5 +52,19 @@
 			</ul>
 		</nav>
 	</footer><!-- fim do rodape -->
+
+	<div id="fb-root"></div>
+	<script>
+	 (function (d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id))
+		  return;
+		  js = d.createElement(s);
+		  js.id = id;
+		  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.4";
+		  fjs.parentNode.insertBefore(js, fjs);
+	 }(document, 'script', 'facebook-jssdk'));
+	</script>
+
 </body>
 </html>
