@@ -49,16 +49,78 @@
 				<img src="img/01.jpg" title="Curso de HTML5 - HTML E CSS" alt="[Curso de HTML5 - HTML E CSS]">
 				<h1>HTML E HTML5</h1>
 				<p>Aprenda a ultilizar o HTML5 do jeito certo! Segmentando seu site e distribuindo o conteudo de forma otimizada e de ponta a ponta!</p>
-				<time datetime="2017-12-15"></time>
+				<time datetime="<?= date('Y-m-d'); ?>"><?= date('d/m/Y \á\s H:i\h\s'); ?></time>
+			</article>
+
+			<article>
+				<img src="img/02.jpg" title="Curso de HTML5 - HTML E CSS" alt="[Curso de HTML5 - HTML E CSS]">
+				<h1>CSS E CSS3</h1>
+				<p>Aprenda a ultilizar o CSS3 e o design Responsivo adequando seus sites para qualquer dispositivo! Descubra a força da estilização do CSS E CSS3!</p>
+				<time datetime="<?= date('Y-m-d'); ?>"><?= date('d/m/Y \á\s H:i\h\s'); ?></time>
+			</article>
+
+			<article>
+				<img src="img/03.jpg" title="Curso de HTML5 - HTML E CSS" alt="[Curso de HTML5 - HTML E CSS]">
+				<h1>JAVASCRIPT E JQUERY</h1>
+				<p>Aprenda a ultilizar o JAVASCRIPT com o JQUERY otimizando seu site colocando detalhes e efeitos estilizados! Pare de usar framework de terceiros e faça o seu!</p>
+				<time datetime="<?= date('Y-m-d'); ?>"><?= date('d/m/Y \á\s H:i\h\s'); ?></time>
+			</article>
+
+			<article>
+				<img src="img/04.jpg" title="Curso de HTML5 - HTML E CSS" alt="[Curso de HTML5 - HTML E CSS]">
+				<h1>SEO E SMO</h1>
+				<p>Aprenda a ultilizar o mecanismo de busca do GOOGLE a seu favor com nossas tecnicas! Alcance o <b>PRIMEIRO LUGAR</b> nos rankings de pesquisa! Melhore seu conteudo, receba mais clientes!</p>
+				<time datetime="<?= date('Y-m-d'); ?>"><?= date('d/m/Y \á\s H:i\h\s'); ?></time>
 			</article>
 
 			<footer>
 				<img title="confira o curso completo de HTML5 do jeito certo" src="img/05.png" alt="confira o curso completo de HTML5 do jeito certo">
-				<h1>CURSO HTML5 do jeito certo!</h1>
-				<p>Aprenda a ultilizar Todo o pode do HTML5 Semântico Somado a Avançadas Técnicas de SEO para Criar Sites Altamentes Lucreativos e Que Geram Resultados Rápidos e Eficientes!</p>
+				<h1>HTML5 DO JEITO CERTO</h1>
+				<p>Aprenda a ultilizar o poder do html5 semantico somado a avanadas tecnicas de seo para cria sites autament lucrativos e que geram resultados rapidos e eficientes!</p>
 				<a href="https://www.upinside.com.br/cursos/html5-do-jeito-certo" target="_blank" title="Curso Work Series - html5 do jeito certo">Conhecer Agora!</a>
 			</footer>
 		</section><!-- O CURSO -->
+
+		<!-- VIDEOS AULAS -->
+			<section>
+				
+				<header>
+					<h1>VIDEO AULAS DO CURSO:</h1>
+					<p>Confira algumas aula do Curso de HTML5</p>
+				</header>
+
+				<div>
+					<?php for($a = 1; $a < 6; $a++): ?>
+					<article>
+						<img src="img/01.jpg" title="Curso de HTML5 - HTML E CSS" alt="[Curso de HTML5 - HTML E CSS]">
+						<h1>HTML E HTML5</h1>
+						<p>Aprenda a ultilizar o HTML5 do jeito certo!</p>
+					</article>
+				<?php endfor; ?>
+				</div>
+
+				<aside>
+					
+					<header>
+						<h1>Comentarios:</h1>
+					</header>
+
+					<article>
+						<img src="img/filipe.jpg" title="Comentario de Rubens Filipe" alt="[Comentario de Rubens Filipe]">
+						<h1><span>Comentario de </span> Rubens Filipe</h1>
+						<p>O curso foi pensado para levar o aluno do zero ao ninja não somente em html. Mas aplicando tecnicas avançadas de otimização</p>
+					</article>
+
+					<article>
+						<img src="img/foto.jpg" title="Comentario de Robson V. Leite" alt="[Comentario de Robson V. Leite]">
+						<h1><span>Comentario de </span> Robson V. Leite</h1>
+						<p>O curso foi pensado para levar o aluno do zero ao ninja não somente em html. Mas aplicando tecnicas avançadas de otimização</p>
+					</article>
+
+				</aside>
+
+			</section>
+		<!-- FIM DE VIDEOS AULAS -->
 
 	</main><!-- fim do conteudo -->
 
