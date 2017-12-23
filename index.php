@@ -6,36 +6,49 @@
 	<title>HTML5 - do jeito certo</title>
 	<meta name="description" content="Esta pagina esta sendo construida com base no curso de html5">
 	<meta name="viewport" content="width=device-width, initia-scale=1.0">
-	<link rel="icon" href="faveicon.png">
-	<!-- <link rel="stylesheet" href=""> -->
+	<link rel="shortcut icon" href="img/favicon.png">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- FONTES DO GOOGLE FONTES -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+	<!-- FONTES DO GOOGLE FONTES -->
 </head>
 <body>
-	<header>
-		<img src="img/_logo.png" title="[Curso de html5]" alt="Curso de html5">
-		<h1>Curso de html5</h1>
-		<ul>
-			<li><a href="#home" title="Curso de html5">Home</a></li>
-			<li><a href="#curso" title="Sobre o curso de html5">O Curso</a></li>
-			<li><a href="https://www.upinside.com.br/cursos/html5-do-jeito-certo" target="_blank" title="Curso Work Series - html5 do jeito certo">Work Series</a></li>
-			<li><a href="#videoaulas" title="Confira as video aulas do curso de html5">Videos Aulas</a></li>
-			<li><a href="#contato" title="Contato sobre o curso de html5">Fale Conosco</a></li>
-		</ul>
+	<header class="main_header container">
+		<div class="content">
+			<img class="main_logo" src="img/_logo.png" title="[Curso de html5]" alt="Curso de html5">
+			<h1 class="fontzero">Curso de html5</h1>
+			<ul class="main_menu">
+				<li><a href="#home" title="Curso de html5">Home</a></li>
+				<li><a href="#curso" title="Sobre o curso de html5">O Curso</a></li>
+				<li><a class="active" href="https://www.upinside.com.br/cursos/html5-do-jeito-certo" target="_blank" title="Curso Work Series - html5 do jeito certo">Work Series</a></li>
+				<li><a href="#videoaulas" title="Confira as video aulas do curso de html5">Videos Aulas</a></li>
+				<li><a href="#contato" title="Contato sobre o curso de html5">Fale Conosco</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div><!-- fim da div content -->
 	</header>
 	<!-- fim do menu superior -->
 
-	<main>
-		<article>
-			<header>
-				<h1>Bem-vindo(a) ao curso gratuito de html5</h1>
-				<p class="tagline">Você esta pronto para aprender HTML5, CSS, JQUERY de forma descomplicada, gratuita e do jeito certo? Confira o nosso curso gratuito de HTML5!</p>
-				<div>
-					<div class="fb-like" data-href="https://www.facebook.com/upinside" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-					<div class="fb-share-button" data-href="http://www.upinside.com.br/oferta/html5-do-jeito-certo/" data-layout="button_count"></div>
+	<main class="container">
+		<article class="destaque container">
+			<div class="content">
+				<header>
+					<h1>Bem-vindo(a) ao curso gratuito de html5</h1>
+					<p class="tagline">Você esta pronto para aprender HTML5, CSS, JQUERY de forma descomplicada, gratuita e do jeito certo? Confira o nosso curso gratuito de HTML5!</p>
+					<div>
+						<div class="fb-like" data-href="https://www.facebook.com/upinside" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+						<div class="fb-share-button" data-href="http://www.upinside.com.br/oferta/html5-do-jeito-certo/" data-layout="button_count"></div>
+					</div>
+				</header>
+
+				<div class="destaque_video">
+					<div class="ratio">
+						<iframe class="media" src="https://www.youtube.com/embed/TYXE-legZMU" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+					</div>
 				</div>
-				<div>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/TYXE-legZMU" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-				</div>
-			</header>
+
+				<div class="clear"></div>
+			</div><!-- fim do content	 -->
 		</article><!-- destaque do site -->
 
 		<section>
@@ -91,12 +104,12 @@
 
 				<div>
 					<?php for($a = 1; $a < 6; $a++): ?>
-					<article>
-						<img src="img/01.jpg" title="Curso de HTML5 - HTML E CSS" alt="[Curso de HTML5 - HTML E CSS]">
-						<h1>HTML E HTML5</h1>
-						<p>Aprenda a ultilizar o HTML5 do jeito certo!</p>
-					</article>
-				<?php endfor; ?>
+						<article>
+							<img src="img/01.jpg" title="Curso de HTML5 - HTML E CSS" alt="[Curso de HTML5 - HTML E CSS]">
+							<h1>HTML E HTML5</h1>
+							<p>Aprenda a ultilizar o HTML5 do jeito certo!</p>
+						</article>
+					<?php endfor; ?>
 				</div>
 
 				<aside>
@@ -121,6 +134,31 @@
 
 			</section>
 		<!-- FIM DE VIDEOS AULAS -->
+
+		<article>
+			<header>
+				<h1>Entre em contato:</h1>
+				<p class="tagline">este formulario esta aqui para estudos do curso de HTML5!</p>
+			</header>
+
+			<form action="" method="">
+				<label>
+					<span>Nome:</span>
+					<input type="text" title="Informe seu nome" required name="nome" placeholder="Informe seu nome">
+				</label>
+				<label>
+					<span>Email:</span>
+					<input type="email" title="Informe seu email" required name="email" placeholder="Informe seu email">
+				</label>
+				<label>
+					<span>Mensagem:</span>
+					<textarea name="mensagem" cols="30" rows="3" required placeholder="deixe sua mensagem"></textarea>
+				</label>
+				<img src="img/ajax-loader.gif" title="Aguarde enviando mensagem" alt="imagem de carregamento">
+				<button>Enviar Contato!</button>
+			</form>
+
+		</article>
 
 	</main><!-- fim do conteudo -->
 
