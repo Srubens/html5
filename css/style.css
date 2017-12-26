@@ -70,6 +70,36 @@ iframe['style']{
 
 .clear{clear:both;}
 .fontzero{font-size: 0;}
+
+.border_bottom{
+	padding-bottom: 10px;
+	background: url(../img/line_sidebar.jpg);
+}
+
+.border_bottom_destaque{
+	width: 100%;
+	float: left;
+}
+
+/* BIG TITLE */
+.big_title{
+	display: block;
+	margin-bottom: 50px;
+	border-right: 10px solid #ccc; 
+}
+
+.big_title h1{
+	font-size: 3em;
+	font-weight: bold;
+	color: #888;
+	text-transform: uppercase;
+}
+
+.big_title .tagline{
+	padding-left: 5px;
+	color: #ccc;
+}
+
 /* BOX GERAL */
 
 /* HEADER */
@@ -154,3 +184,286 @@ iframe['style']{
 }
 
 /* FIM DE DESTAQUE */
+
+
+/* O CURSO */
+.curso .curso_item{
+	float: left;
+	width: 22.75%;
+	margin-right: 3%;
+}
+
+.curso .curso_item:last-of-type{
+	margin-right: 0;
+}
+
+.curso_item h1{
+	font-size: 1.4em;
+	font-weight: 600;
+	color: #2EB5D1;
+	margin-top: 20px;
+}
+
+.curso_item p{
+	font-size: 0.875em;
+	margin: 10px 0;
+}
+
+.curso_item span{
+	font-size: 0.7em;
+	text-transform: uppercase;
+	color: #ccc;
+}
+
+.cursos_footer{
+	background: #289CBA;
+	text-align: center;
+	color: #fff;
+}
+
+.cursos_footer .content{
+	/* padding-bottom: 0; */
+	max-width: 500px;
+}
+
+.cursos_footer h1{
+	font-size: 1.5em;
+	text-transform: uppercase;
+	margin: 30px 0 20px 0;
+	font-weight: 600;
+}
+
+.cursos_footer p{
+	font-size: 0.9em;
+	font-weight: 300;
+}
+
+.cursos_footer .btn{
+	display: block;
+	margin-top: 30px;
+	padding: 18px;
+	background: #00458A;
+	color: #fff;
+	border-radius: 12px;
+	margin: 0 auto;
+	max-width: 80%;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.cursos_footer .btn:hover{
+	background: #005EBB;
+}
+
+/* VIDEO AULAS */
+.videoaulas_videos{
+	float: left;
+	width: 65%;
+	padding-right: 3%;
+}
+
+.videoaulas_videos article{
+	float: left;
+	width: 48%;
+	margin: 0 4% 4% 0;
+}
+
+.videoaulas_videos article img{
+	float: left;
+	margin-right: 15px;
+	width: 50%;
+}
+
+.videoaulas_videos article h1{
+	font-size: 1em;
+	margin-bottom: 5px;
+	font-weight: 600;
+	color: #2EB5D1;
+}
+
+.videoaulas_videos article p{
+	font-size: 0.875em;
+
+}
+
+.videoaulas_videos article:nth-of-type(2n+0){
+	margin-right: 0;
+}
+
+.videoaulas_siderbar{
+	float: right;
+	width: 35%;
+	background: #eee;
+}
+
+.videoaulas_siderbar .content{
+	padding: 30px;
+	width: 100%;
+	background: #eee;
+}
+
+.videoaulas_siderbar .title{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.1em;
+	padding-bottom: 10px;
+	border-bottom: 5px solid #ccc;
+	margin: 0 35px;
+}
+
+.videoaulas_siderbar_comment{
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.videoaulas_siderbar_comment img{
+	float: left;
+	width: 20%;
+	margin-right: 20px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+
+
+.videoaulas_siderbar_comment h1{
+	font-size: 1em;
+	font-weight: bold;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+
+.videoaulas_siderbar_comment p{
+	font-size: 0.8em;
+}
+
+/* CONTATO */
+.contato{
+	background: #eee;
+}
+
+.contato header{
+	float: left;
+	width: 30%;
+}
+
+.contato h1{
+	font-size: 3em;
+	text-transform: uppercase;
+	color: #888;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.contato p {
+	color: #555;
+}
+
+.contato_form{
+	float: right;
+	width: 70%;
+	padding-left: 5%;
+}
+
+.contato_form label{
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.contato_form span{
+	font-size: 0.7em;
+	display: block;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.contato_form .medium{
+	float: left;
+	width: 48%;
+}
+
+.contato_form .medium:first-of-type{
+	margin-right: 4%;
+}
+
+.contato_form input,
+.contato_form textarea{
+	width: 100%;
+	border: none;
+	padding: 10px;
+	background: #ccc;
+	font-family: 'Arial', sans-serif;
+}
+
+.contato_form .btn{
+	border: none;
+	background: #289CB5;
+	padding: 15px 25px;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 0.875em;
+	margin-top: 10px;
+	cursor: pointer;
+	float: right;
+	color: #fff;
+}
+
+.contato_form .btn:hover{
+	background: #51C1D9;
+}
+
+.form_load{
+	float: right;
+	margin-top: 25px;
+	margin-left: 20px;
+	/* display: none; */
+}
+
+
+.main_footer{
+	text-align: center;
+	color: #ccc;
+	background: #444;
+}
+
+.main_footer .ftcontent{
+	background: #444;
+	padding: 30px;
+}
+
+.main_footer .title{
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.main_footer .subtitle{
+	font-weight: bold;
+	font-size: 1.4em;
+	text-transform: uppercase;
+}
+
+.main_footer_social{
+	display: block;
+	margin-top: 20px;
+}
+
+.main_footer_social li{
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.main_footer_social a{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: .8em;
+}
+
+.main_footer_social a:hover{
+	text-decoration: underline;
+}
+
+
