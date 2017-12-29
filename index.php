@@ -13,7 +13,8 @@
 	<!-- FONTES DO GOOGLE FONTES -->
 </head>
 <body>
-	<header class="main_header container">
+	<p class="j_back backtop">Topo</p>
+	<header class="main_header container home">
 		<div class="content">
 			<img class="main_logo" src="img/_logo.png" title="[Curso de html5]" alt="Curso de html5">
 			<h1 class="fontzero">Curso de html5</h1>
@@ -156,7 +157,7 @@
 					<p class="tagline">este formulario esta aqui para estudos do curso de HTML5!</p>
 				</header>
 
-				<form class="contato_form" action="" method="">
+				<form class="contato_form j_formsubmit" action="" method="">
 					
 					<label class="medium">
 						<span>Nome:</span>
@@ -201,8 +202,11 @@
 		</div><!-- fim do border bottom -->
 	</footer><!-- fim do rodape -->
 
+	<script src="js/jquery.js"></script>
+	<script src="js/myindex.js"></script>
+
 	<div id="fb-root"></div>
-	
+
 	<script src="myscript.js"></script>
 	<script>
 	 (function (d, s, id) {
